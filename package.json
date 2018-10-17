@@ -29,6 +29,7 @@
     "coverage": "npm run test -- --coverage --coveragePathIgnorePatterns=src/relay/__generated__",
     "test:circleci": "TEST_REPORT_FILENAME=test-reports/jest-junit.xml npm test -- --ci --testResultsProcessor=./node_modules/jest-junit-reporter --forceExit",
     "start": "babel-node .",
+    "chromatic": "chromatic test  --do-not-start",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -81,6 +82,7 @@
     "react-router-dom": "4.3.1",
     "react-test-renderer": "16.5.1",
     "relay-compiler": "1.6.2",
+    "storybook-chromatic": "^1.1.0",
     "xunit-file": "1.0.0"
   },
   "browserslist": [
